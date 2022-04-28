@@ -38,15 +38,22 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetTrigger("Run");
             canMove = true;
-            rigid.velocity = new Vector3(rigid.velocity.x, 0, speed);
+            
         }
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -bounds, bounds), transform.position.y, transform.position.z);
 
     }
 
+ 
+
     private void FixedUpdate()
     {
+        if (canMove)
+        {
+            Vector3 moveVector = new Vector3(rigid.velocity.x, 0, speed);
+            rigid.velocity = moveVector;
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
