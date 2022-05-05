@@ -8,7 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: clothes1
-    second: {fileID: 2100000, guid: d8e2ad12543fbf44aaf733ba1cfda87d, type: 2}
+    second: {fileID: 2100000, guid: 54c80e02903ad2a498709acfc8ef27c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 10404c339921d914c9f3bac52e76ef9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin1
+    second: {fileID: 2100000, guid: c20509209ea76a54ba12387549e05b48, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

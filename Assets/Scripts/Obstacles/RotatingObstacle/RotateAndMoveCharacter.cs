@@ -32,13 +32,14 @@ public class RotateAndMoveCharacter : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        collision.gameObject.GetComponent<PlayerController>().rotatingPlatformMove(true, rotateDirection * moveForce);
+        
+        collision.gameObject.GetComponent<Character>().rotatingPlatformMove(true, rotateDirection * moveForce);
     }
 
 
     private void OnCollisionExit(Collision collision)
     {
-        collision.gameObject.GetComponent<PlayerController>().rotatingPlatformMove(false, rotateDirection * moveForce);
+        collision.gameObject.GetComponent<Character>().rotatingPlatformMove(false, rotateDirection * moveForce);
     }
 
 }

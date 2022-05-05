@@ -8,12 +8,12 @@ public class CharacterRestrart : MonoBehaviour
     {
         if(collision.collider.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
         {
-            GetComponent<PlayerController>().playerFailed();
+            GetComponent<Character>().chracterFailed();
             
         }
         else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            GetComponent<PlayerController>().playerDead();
+            GetComponent<Character>().characterDead();
         }
     }
 }
